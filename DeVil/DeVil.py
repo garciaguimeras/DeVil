@@ -75,7 +75,7 @@ class daemon(object):
         try:
             self.stop()
             os.kill(pid, signal.SIGTERM)
-            self._print("Producer thread terminated")
+            self._print("Daemon terminated")
         except OSError:
             self._print("Daemon already stopped")
             
